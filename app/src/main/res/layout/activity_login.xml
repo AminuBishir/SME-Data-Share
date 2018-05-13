@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.sadarwa.aminubishier.smed_share.Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/padlock" />
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name_txtb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="0dp"
+        android:ems="11"
+        android:hint="@string/enter_registration_code"
+        android:inputType="textPersonName"
+        android:textColor="#00b"
+        android:textColorHint="#000" />
+
+    <TextView
+        android:id="@+id/password_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_txt"
+        android:layout_alignStart="@+id/name_txt"
+        android:layout_below="@+id/name_txtb"
+        android:layout_marginTop="30dp"
+        android:textColor="#00b"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/student_name_txtb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/name_txtb"
+
+        android:layout_alignRight="@+id/name_txtb"
+        android:layout_below="@+id/name_txtb"
+        android:layout_marginTop="25dp"
+        android:ems="11"
+        android:hint="@string/enter_your_company_name"
+        android:inputType="textPersonName"
+        android:textColor="#00b"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/password_txtb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/student_name_txtb"
+
+        android:layout_alignRight="@+id/student_name_txtb"
+        android:layout_below="@+id/student_name_txtb"
+        android:layout_marginTop="25dp"
+        android:ems="11"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#00b"
+        android:textColorHint="#000" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/password_txtb"
+        android:layout_alignRight="@+id/password_txtb"
+        android:layout_below="@+id/password_txtb"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="31dp"
+        android:text="Log In"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textStyle="italic"
+
+        android:textColor="#000"
+        android:text="(for Reg. code, contact 07061599050)" />
+
+
+</RelativeLayout>
